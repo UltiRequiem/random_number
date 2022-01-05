@@ -9,7 +9,10 @@ Deno.test("[randomNumber]", () => {
 });
 
 Deno.test("[randomNumber] with Config", () => {
-  assertNotEquals(randomNumber({ min: 2393 }), randomNumber({ integer: true }));
+  assertNotEquals(
+    randomNumber({ min: 2393, max: 3000 }),
+    randomNumber({ integer: true }),
+  );
 });
 
 Deno.test("[randomNumberGenerator]", () => {

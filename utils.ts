@@ -18,7 +18,7 @@ export function parseOptions(options: Options | undefined): Config {
 
   if (config.max < config.min) {
     throw new Error(
-      `Expected max to be greater than to min, got ${config.min} as max and ${config.max} as min.`,
+      `Expected max to be greater than to min, got ${config.max} as max and ${config.min} as min.`,
     );
   }
 

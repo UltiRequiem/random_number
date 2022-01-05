@@ -1,6 +1,7 @@
 # random_number
 
-> Generate random number, a list of them or a generator with configuration.
+> Generate random number, a list of them or a generator with optional
+> configuration.
 
 ## Usage
 
@@ -10,7 +11,7 @@ import randomNumber from "https://deno.land/x/random_number/mod.ts";
 randomNumber(); //=> 0.419534816957152
 ```
 
-A more complete example
+A more complete example:
 
 ```typescript
 import {
