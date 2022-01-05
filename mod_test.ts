@@ -1,23 +1,38 @@
-import {
-  assert,
-  assertEquals,
-  assertThrows,
-} from "https://deno.land/std@0.119.0/testing/asserts.ts";
-import randomItem, { randomMultipleItems } from "./mod.ts";
+import { assertEquals, assertNotEquals } from "./test_deps.ts";
+import randomNumber, {
+  randomNumberGenerator,
+  randomNumberList,
+} from "./mod.ts";
 
-const letters = ["a", "b", "c", "d", "e"];
-
-Deno.test("randomItem", () => {
-  assert(letters.includes(randomItem(letters)));
+Deno.test("[randomNumber]", () => {
+  assertNotEquals(randomNumber(), randomNumber());
 });
 
-Deno.test("randomMultipleItems", () => {
-  const result = randomMultipleItems(letters, 4);
-
-  assertEquals(result.length, 4);
-  assert(result.every((value) => letters.includes(value)));
+Deno.test("[randomNumber] with Config", () => {
+  assertNotEquals(randomNumber({ min: 2393 }), randomNumber({ integer: true }));
 });
 
-Deno.test("randomMultipleItems arguments validation", () => {
-  assertThrows(() => randomMultipleItems(letters, -3));
+Deno.test("[randomNumberGenerator]", () => {
+  const rander = randomNumberGenerator();
+  assertNotEquals(rander(), rander());
+});
+
+Deno.test("[randomNumberGenerator] with Config", () => {
+  const rander = randomNumberGenerator({ min: 1, max: 1000, integer: true });
+  assertNotEquals(rander(), rander());
+});
+
+Deno.test("[randomNumberList] length", () => {
+  const randomNumbers = randomNumberList(10);
+  assertEquals(randomNumbers.length, 10);
+});
+
+Deno.test("[randomNumberList] length with config", () => {
+  const randomNumbers = randomNumberList(10, {
+    min: 1,
+    max: 1000,
+    integer: true,
+  });
+
+  assertEquals(randomNumbers.length, 10);
 });
