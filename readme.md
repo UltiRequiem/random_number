@@ -11,13 +11,13 @@ import randomNumber from "https://deno.land/x/random_number/mod.ts";
 randomNumber(); //=> 0.419534816957152
 ```
 
-A more complete example:
+A more complete example using all API:
 
 ```typescript
 import {
   randomNumber,
   randomNumberGenerator,
-  randomNumberList,
+  randomNumberList
 } from "https://deno.land/x/random_number/mod.ts";
 
 const randomInteger = randomNumber({ integer: true, max: 5 });
@@ -41,6 +41,8 @@ for (let index = 1; index < 5; index++) {
 ### [`randomNumber(options)`](./mod.ts#L8)
 
 Receive [options](#options)
+
+This is exported as default and as a named export for flexibility.
 
 ### [`randomNumberGenerator(options)`](./mod.ts#L19)
 
