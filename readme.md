@@ -38,11 +38,11 @@ for (let index = 1; index < 5; index++) {
 
 ## API
 
-- `randomNumber` Exported as `default` an as named export.
+### [`randomNumber(options)`](./mod.ts#L8)
 
-- `randomNumberGenerator`
+### [`randomNumberGenerator(options)`](./mod.ts#L19)
 
-- `randomNumberList`
+### [`randomNumberList(length, options)`](./mod.ts#L34)
 
 ## License
 
