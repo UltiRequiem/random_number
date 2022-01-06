@@ -14,4 +14,3 @@ jobs:
       - run: deno lint
       - run: deno test
       - run: deno fmt --check
-      - run: deno run example.ts

@@ -17,7 +17,7 @@ A more complete example using all API:
 import {
   randomNumber,
   randomNumberGenerator,
-  randomNumberList
+  randomNumberList,
 } from "https://deno.land/x/random_number/mod.ts";
 
 const randomInteger = randomNumber({ integer: true, max: 5 });

@@ -2,7 +2,7 @@ import {
   randomNumber,
   randomNumberGenerator,
   randomNumberList,
-} from "./mod.ts";
+} from "../mod.ts";
 
 const randomInteger = randomNumber({ integer: true, max: 5 });
 console.log(`Random integer: ${randomInteger}`);

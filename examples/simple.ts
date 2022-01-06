@@ -1,3 +1,3 @@
-import randomNumber from "./mod.ts";
+import randomNumber from "../mod.ts";
 
 console.log(randomNumber());
