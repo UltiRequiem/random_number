@@ -1,7 +1,7 @@
 # random_number
 
-> Generate random number, a list of them or a generator with optional
-> configuration.
+> Generate a random number, a list of them, or a generator with optional
+> configuration
 
 ## Usage
 
