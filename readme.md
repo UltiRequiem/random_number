@@ -50,19 +50,29 @@ Receive [options](#options)
 
 #### length
 
+Type: `number`
+
 The length of the wanted array of random numbers.
 
 ### [`Options`](./utils.ts#L7)
 
+A TypeScript type.
+
 #### min
+
+Type: `number` || `undefined`
 
 The minimum value
 
 #### max
 
-The minimum value
+The maximum value
+
+Type: `number` || `undefined`
 
 #### integer
+
+Type: `boolean` || `undefined`
 
 Makes the result an integer instead of a decimal
 
