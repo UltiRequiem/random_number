@@ -40,9 +40,31 @@ for (let index = 1; index < 5; index++) {
 
 ### [`randomNumber(options)`](./mod.ts#L8)
 
+Receive [options](#options)
+
 ### [`randomNumberGenerator(options)`](./mod.ts#L19)
 
+Receive [options](#options)
+
 ### [`randomNumberList(length, options)`](./mod.ts#L34)
+
+#### length
+
+The length of the wanted array of random numbers.
+
+### [`Options`](./utils.ts#L7)
+
+#### min
+
+The minimum value
+
+#### max
+
+The minimum value
+
+#### integer
+
+Makes the result an integer instead of a decimal
 
 ## License
 
