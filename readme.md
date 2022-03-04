@@ -1,19 +1,22 @@
 # random_number
 
-> Generate a random number, a list of them, or a generator, with optional
-> configuration!
+> Includes REST API, CLI Tool and Package
+
+Generate a random number, a list of them, or a generator, with optional
+configuration!
 
 ## Usage
 
-> `randomNumber` is exported as default and named
-
 ```typescript
-import randomNumber from "https://deno.land/x/random_number/mod.ts";
+import { randomNumber } from "https://deno.land/x/random_number/mod.ts";
 
-randomNumber(); //=> 0.419534816957152
+randomNumber(); //=> 21
+randomNumber({ max: 3 }); //=> 2
+randomNumber({ min: 3, max: 6 }); //=> 4
+randomNumber({ integer: false }); //=> 0.419534816957152
 ```
 
-A more complete example using all API:
+All API 👇
 
 ```typescript
 import {
@@ -37,6 +40,8 @@ for (let index = 1; index < 5; index++) {
   console.log(`Time ${index}: ${rdGenerator()}`);
 }
 ```
+
+> Pull Request Expanding the API are welcome
 
 ## Docs
 

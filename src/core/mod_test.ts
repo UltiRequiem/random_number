@@ -1,5 +1,6 @@
-import { assertEquals, assertNotEquals } from "./test_deps.ts";
-import randomNumber, {
+import { assertEquals, assertNotEquals } from "../test_deps.ts";
+import {
+  randomNumber,
   randomNumberGenerator,
   randomNumberList,
 } from "./mod.ts";
