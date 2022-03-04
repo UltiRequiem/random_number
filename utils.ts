@@ -6,13 +6,11 @@ export interface Config {
 
 export type Options = Partial<Config>;
 
-export function parseOptions(options: Options | undefined): Config {
-  const max = options?.integer ? 100 : 1;
-
+export function parseOptions(options?: Options): Config {
   const config: Config = {
     min: 0,
-    max,
-    integer: false,
+    integer: true,
+    max: options?.integer ? 1 : 100,
     ...options,
   };
 

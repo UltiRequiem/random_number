@@ -2,7 +2,7 @@ import type { Options } from "./utils.ts";
 import { parseOptions } from "./utils.ts";
 
 /**
- * @param [options] Options to build the random number
+ * @param options - Options to build the random number
  * @returns A random number with the given options
  */
 export default function randomNumber(options?: Options) {
@@ -13,7 +13,7 @@ export default function randomNumber(options?: Options) {
 }
 
 /**
-  @param [options] Configurations to build the random number
+  @param options - Configurations to build the random number
   @returns A function that generates a random number with the originally given option
 */
 export function randomNumberGenerator(options?: Options) {
@@ -27,8 +27,8 @@ export function randomNumberGenerator(options?: Options) {
 }
 
 /**
- * @param length The length of the list, they quantity of generated numbers
- * @param [options] Configurations to build the random number
+ * @param length - The length of the list, they quantity of generated numbers
+ * @param options - Configurations to build the random number
  * @returns A list with the given length filled with random numbers generated with the given options
  */
 export function randomNumberList(length: number, options?: Options) {
