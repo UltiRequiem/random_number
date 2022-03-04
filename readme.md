@@ -50,7 +50,7 @@ for (let index = 1; index < 5; index++) {
 ## CLI Tool
 
 ```sh
-deno install https://deno.land/x/random_number/src/cli/mod.ts
+deno -n random_number install https://deno.land/x/random_number/src/cli/mod.ts
 ```
 
 ## API
