@@ -47,6 +47,16 @@ for (let index = 1; index < 5; index++) {
 
 [Check the Auto Generated Docs](https://doc.deno.land/https://deno.land/x/random_number/mod.ts)
 
+## CLI Tool
+
+```sh
+deno install https://deno.land/x/random_number/src/cli/mod.ts
+```
+
+## API
+
+https://random-number.deno.dev
+
 ## License
 
 This project is licensed under the [MIT License](./license).

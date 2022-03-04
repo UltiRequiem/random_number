@@ -1,9 +1,11 @@
-import { assertEquals, assertNotEquals } from "../test_deps.ts";
+import { assert, assertEquals, assertNotEquals } from "../test_deps.ts";
 import {
   randomNumber,
   randomNumberGenerator,
   randomNumberList,
 } from "./mod.ts";
+
+const between = (x: number, min: number, max: number) => x >= min && x <= max;
 
 Deno.test("[randomNumber]", () => {
   assertNotEquals(randomNumber(), randomNumber());
@@ -39,4 +41,9 @@ Deno.test("[randomNumberList] length with config", () => {
   });
 
   assertEquals(randomNumbers.length, 10);
+});
+
+Deno.test("[randomNumber] should return a number between 10 and 100", () => {
+  const random = randomNumber({ min: 10, max: 100 });
+  assert(between(random, 10, 100));
 });
