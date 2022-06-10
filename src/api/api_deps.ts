@@ -1,2 +1,2 @@
-export * from "https://deno.land/std@0.142.0/http/server.ts";
-export * from "https://deno.land/std@0.142.0/http/http_status.ts";
+export * from "https://deno.land/std@0.143.0/http/server.ts";
+export * from "https://deno.land/std@0.143.0/http/http_status.ts";
