@@ -64,8 +64,6 @@ rnd --help
 
 [A binary for multiple platforms is provided too!](https://github.com/UltiRequiem/random_number/releases/latest)
 
-[Video Showcase](https://youtu.be/06t6aWE-6Mk)
-
 ## Support
 
 Open an Issue, I will check it a soon as possible 👀
