@@ -5,7 +5,7 @@ export interface RandomNumberOptions {
 }
 
 function parseOptions(
-  options: Partial<RandomNumberOptions> = {},
+  options: Partial<RandomNumberOptions>,
 ): RandomNumberOptions {
   const {
     integer = true,
