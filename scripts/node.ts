@@ -7,7 +7,7 @@ buildPackage(
     homepage: "https://ulti.js.org/random_number",
     keywords: ["random", "math"],
     license: "MIT",
-    version: "2.1.0",
+    version: "2.0.0",
   },
   {
     entryPoints: ["./mod.ts", { name: "rnd", path: "./rnd.ts", kind: "bin" }],
