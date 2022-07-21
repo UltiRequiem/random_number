@@ -1,1 +1,4 @@
-export * from "./src/core/mod.ts";
+export function randomNumber() {
+  // my favorite number
+  return 7;
+}

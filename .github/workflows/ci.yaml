@@ -1,16 +1,55 @@
 name: CI
 
-on: push
+on: [push, pull_request]
 
 jobs:
-  lint:
-    name: Run tests, Lint, and check format.
-    runs-on: ubuntu-latest
+  build:
+    name: Test (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macOS-latest]
+      fail-fast: true
     steps:
-      - uses: actions/checkout@v2
-      - uses: denoland/setup-deno@v1
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Deno
+        uses: denoland/setup-deno@v1
         with:
           deno-version: v1.x
-      - run: deno lint
-      - run: deno test
-      - run: deno fmt --check
+
+      - name: Setup Node
+        if: matrix.os == 'ubuntu-latest'
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Check Code Format
+        if: matrix.os == 'ubuntu-latest'
+        run: deno fmt --check
+
+      - name: Lint
+        if: matrix.os == 'ubuntu-latest'
+        run: deno lint
+
+      - name: Check
+        if: matrix.os == 'ubuntu-latest'
+        run: deno check mod.ts
+
+      - name: Tests
+        run: deno test --allow-net --coverage=./cov
+
+      - name: Generate Coverage
+        if: matrix.os == 'ubuntu-latest'
+        run: deno coverage --unstable --lcov ./cov > cov.lcov
+
+      - name: Upload Coverage
+        if: matrix.os == 'ubuntu-latest'
+        uses: codecov/codecov-action@v2
+        with:
+          files: cov.lcov
+
+      - name: Node Test
+        if: matrix.os == 'ubuntu-latest'
+        run: deno run -A scripts/node.ts
