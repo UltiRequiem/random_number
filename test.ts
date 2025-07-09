@@ -3,7 +3,7 @@ import {
   assertEquals,
   assertNotEquals,
   assertThrows,
-} from "https://deno.land/std@0.175.0/testing/asserts.ts";
+} from "https://deno.land/std@0.224.0/testing/asserts.ts";
 import { randomNumber } from "./mod.ts";
 
 const between = (x: number, min: number, max: number) => x >= min && x <= max;
