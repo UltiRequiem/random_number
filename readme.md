@@ -1,11 +1,11 @@
 # Random Number
 
+Get a random number.
+
 [![npm](https://img.shields.io/npm/v/@ultirequiem/random-number?logo=npm&color=cb3837)](https://www.npmjs.com/package/@ultirequiem/random-number)
 [![npm downloads](https://img.shields.io/npm/dm/@ultirequiem/random-number?color=cb3837)](https://www.npmjs.com/package/@ultirequiem/random-number)
 [![CI](https://github.com/UltiRequiem/random_number/actions/workflows/ci.yaml/badge.svg)](https://github.com/UltiRequiem/random_number/actions/workflows/ci.yaml)
 [![codecov](https://codecov.io/gh/UltiRequiem/random_number/graph/badge.svg)](https://codecov.io/gh/UltiRequiem/random_number)
-
-Get a random number.
 
 ## Usage
 
