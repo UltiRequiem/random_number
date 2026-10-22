@@ -1,7 +1,7 @@
 {
   "name": "@ultirequiem/random-number",
   "version": "0.0.0-development",
-  "description": "Random string generator",
+  "description": "Get a random number within a range.",
   "type": "module",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -19,8 +19,10 @@
   },
   "keywords": [
     "random",
-    "string",
-    "generator"
+    "number",
+    "range",
+    "esm",
+    "typescript"
   ],
   "license": "ISC",
   "homepage": "https://github.com/modulesio/rnd#readme",
