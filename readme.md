@@ -9,7 +9,7 @@ Get a random number.
 
 ## Usage
 
-### [Node.js 🐢🚀](https://npmjs.com/package/@ultirequiem/random-number)
+ESM only: the same import works in Node.js, Bun and browsers.
 
 ```typescript
 import { randomNumber } from "@ultirequiem/random-number";
@@ -19,17 +19,6 @@ randomNumber({ min: 10 }); //=> 10 ... 100
 randomNumber({ min: 235, max: 239 }); //=> 235 ... 239
 randomNumber({ integer: false }); //=> 0 ... 0.9
 ```
-
-### Browser
-
-You can use any [CDN](https://en.wikipedia.org/wiki/Content_delivery_network) 🔥
-
-Eg. [ESM](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
-▶ [SkyPack](https://cdn.skypack.dev/@ultirequiem/random-number) _/_
-[script tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) ▶
-[JSDelivr](https://cdn.jsdelivr.net/npm/@ultirequiem/random-number).
-
-The API is the same on all these platforms.
 
 ## Support
 
