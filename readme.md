@@ -31,35 +31,6 @@ Eg. [ESM](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
 
 The API is the same on all these platforms.
 
-## Documentation
-
-Is hosted on
-[Deno Doc](https://doc.deno.land/https://deno.land/x/random_number/mod.ts) 📄
-
-## CLI
-
-### Install
-
-- **Deno 🎃**
-
-```sh
-deno install https://deno.land/x/random_number/rnd.ts
-```
-
-- **Node.js 🐼**
-
-```sh
-npm install -g @ultirequiem/random-number
-```
-
-### Usage
-
-```sh
-rnd --help
-```
-
-[A binary for multiple platforms is provided too!](https://github.com/UltiRequiem/random_number/releases/latest)
-
 ## Support
 
 Open an Issue, I will check it as soon as possible 👀
