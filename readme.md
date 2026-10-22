@@ -9,7 +9,7 @@ Get a random number.
 
 ## Usage
 
-ESM only: the same import works in Node.js, Bun and browsers.
+ESM only, types included: the same import works in Node.js, Bun and browsers.
 
 ```typescript
 import { randomNumber } from "@ultirequiem/random-number";
