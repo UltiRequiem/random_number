@@ -1,27 +1,20 @@
 # Random Number
 
 [![Code Coverage](https://codecov.io/gh/ultirequiem/random_number/branch/main/graph/badge.svg)](https://codecov.io/gh/ultirequiem/random_number)
-[![Deno Doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/random_number/mod.ts)
 
 Get a random number.
 
 ## Usage
 
-### [Deno 🦕](https://deno.land/x/random_number)
+### [Node.js 🐢🚀](https://npmjs.com/package/rnd)
 
 ```typescript
-import { randomNumber } from "https://deno.land/x/random_number/mod.ts";
+import { randomNumber } from "rnd";
 
 randomNumber(); //=> 1 ... 100
 randomNumber({ min: 10 }); //=> 10 ... 100
 randomNumber({ min: 235, max: 239 }); //=> 235 ... 239
 randomNumber({ integer: false }); //=> 0 ... 0.9
-```
-
-### [Node.js 🐢](https://npmjs.com/package/@ultirequiem/random-number)
-
-```typescript
-import { randomNumber } from "@ultirequiem/random-number";
 ```
 
 ### Browser
@@ -70,9 +63,6 @@ Open an Issue, I will check it a soon as possible 👀
 
 If you want to hurry me up a bit
 [send me a tweet](https://twitter.com/UltiRequiem) 😆
-
-Consider [supporting me on Patreon](https://patreon.com/UltiRequiem) if you like
-my work 🚀
 
 Don't forget to star the repo ⭐
 

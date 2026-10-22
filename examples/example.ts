@@ -1,4 +1,4 @@
-import { randomNumber } from "./mod.ts";
+import { randomNumber } from "../src/index.js";
 
 console.log(randomNumber()); //=> 1 ... 100
 
