@@ -1,6 +1,6 @@
 # Random Number
 
-Get a random number.
+Get a random number within a range.
 
 [![npm](https://img.shields.io/npm/v/@ultirequiem/random-number?logo=npm&color=cb3837)](https://www.npmjs.com/package/@ultirequiem/random-number)
 [![npm downloads](https://img.shields.io/npm/dm/@ultirequiem/random-number?color=cb3837)](https://www.npmjs.com/package/@ultirequiem/random-number)
