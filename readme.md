@@ -1,15 +1,18 @@
 # Random Number
 
-[![Code Coverage](https://codecov.io/gh/ultirequiem/random_number/branch/main/graph/badge.svg)](https://codecov.io/gh/ultirequiem/random_number)
+[![npm](https://img.shields.io/npm/v/@ultirequiem/random-number?logo=npm&color=cb3837)](https://www.npmjs.com/package/@ultirequiem/random-number)
+[![npm downloads](https://img.shields.io/npm/dm/@ultirequiem/random-number?color=cb3837)](https://www.npmjs.com/package/@ultirequiem/random-number)
+[![CI](https://github.com/UltiRequiem/random_number/actions/workflows/ci.yaml/badge.svg)](https://github.com/UltiRequiem/random_number/actions/workflows/ci.yaml)
+[![codecov](https://codecov.io/gh/UltiRequiem/random_number/graph/badge.svg)](https://codecov.io/gh/UltiRequiem/random_number)
 
 Get a random number.
 
 ## Usage
 
-### [Node.js 🐢🚀](https://npmjs.com/package/rnd)
+### [Node.js 🐢🚀](https://npmjs.com/package/@ultirequiem/random-number)
 
 ```typescript
-import { randomNumber } from "rnd";
+import { randomNumber } from "@ultirequiem/random-number";
 
 randomNumber(); //=> 1 ... 100
 randomNumber({ min: 10 }); //=> 10 ... 100
@@ -26,7 +29,7 @@ Eg. [ESM](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
 [script tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) ▶
 [JSDelivr](https://cdn.jsdelivr.net/npm/@ultirequiem/random-number).
 
-The API is the same on all this platforms.
+The API is the same on all these platforms.
 
 ## Documentation
 
@@ -59,7 +62,7 @@ rnd --help
 
 ## Support
 
-Open an Issue, I will check it a soon as possible 👀
+Open an Issue, I will check it as soon as possible 👀
 
 If you want to hurry me up a bit
 [send me a tweet](https://twitter.com/UltiRequiem) 😆
